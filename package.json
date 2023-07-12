@@ -1,0 +1,14 @@
+{
+  "name": "test-eltex",
+  "version": "1.0.0",
+  "description": "Performing a test task - web page layout, for the position of HTML-coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Boris Web",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
