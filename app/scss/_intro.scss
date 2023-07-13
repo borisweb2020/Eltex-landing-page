@@ -1,0 +1,61 @@
+.intro{
+	height: 830px;
+	background: url('../images/intro-bgc.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	filter: drop-shadow(0px 0px 16px rgba(77, 92, 100, 0.10));
+
+	&__inner{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 16px;
+	}
+
+	// &__content{
+	// 	padding-top: 161px;
+	// }
+
+	&__wrap{
+		margin-bottom: 88px;
+		position: relative;
+	}
+
+	&__title{
+		@include font-title(88px);
+		color: $black;
+	}
+
+	&__label{
+		@include label(18px, 1.3);
+		background-color:#1FB94B;
+		color: $white;
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		transform: translateY(50%) rotate(-3deg);
+	}
+
+	&__card{
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 32px;
+		box-shadow: 0px 0px 12px 6px rgba(39, 94, 199, 0.05);
+
+	}
+
+	&__card-text{
+		font-family: 'PTRootUI-Medium', sans-serif;
+		font-weight: 500;
+		line-height: 1.3;
+
+		max-width: 400px;
+		margin-right: 24px;
+	}
+
+	&__card-btn{
+		background-color: $blue-main;
+		align-self: center;
+	}
+}

@@ -1,0 +1,17 @@
+@mixin font-title($size){
+	font-family: 'PTRootUI-Bold', sans-serif;
+	font-size: $size;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+@mixin label($size, $line-height){
+	font-family: 'PTRootUI-Medium', sans-serif;
+	font-size: $size;
+	font-weight: 500;
+	line-height: $line-height;
+
+	border-radius: 16px;
+	padding: 6px 32px 9px 32px;
+	display: inline-block;
+}
