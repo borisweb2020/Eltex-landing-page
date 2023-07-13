@@ -1,15 +1,26 @@
 @font-face {
-  font-family: 'Helvetica';
+  font-family: 'PTRootUI-Regular';
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url('../fonts/helvetica.woff2') format('woff2');
+  src: url('../fonts/PT-Root-UI-400.ttf') format('truetype'),
+      url('../fonts/PT-Root-UI-400.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Helvetica-Bold';
+  font-family: 'PTRootUI-Medium';
   font-style: normal;
   font-display: swap;
-  font-weight: 900;
-  src: url('../fonts/helvetica-bold.woff2') format('woff2');
+  font-weight: 500;
+  src: url('../fonts/PT-Root-UI-500.ttf') format('truetype'),
+      url('../fonts/PT-Root-UI-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'PTRootUI-Bold';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('../fonts/PT-Root-UI-700.ttf') format('truetype'),
+      url('../fonts/PT-Root-UI-700.woff2') format('woff2');
 }
