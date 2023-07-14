@@ -79,7 +79,8 @@ ul{
 	color: $white;
 
 	padding: 12px 24px;
-	border-radius: 16px
+	border-radius: 16px;
+	transition: background-color 0.2s linear;
 }
 
 .color{

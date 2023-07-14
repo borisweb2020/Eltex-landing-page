@@ -1,24 +1,51 @@
 .intro{
-	height: 830px;
 	background: url('../images/intro-bgc.png') no-repeat;
-	background-size: cover;
 	background-position: center;
-
 	filter: drop-shadow(0px 0px 16px rgba(77, 92, 100, 0.10));
+
+	color: $white;
+	font-family: 'PTRootUI-Medium', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+
+	position: relative;
+	overflow: hidden;
+
+	&::after{
+		position: absolute;
+		top: 0;
+		left: 27.24%;
+		z-index: -1;
+
+		content: '';
+		display: block;
+		width: 358px;
+		height: 738px;
+		background: linear-gradient(180deg, #AECAF4 0%,
+											#D4E5FE 26.56%, #4D94FF 100%);
+		box-shadow: -30px 4px 50px 0px #568CF4 inset;
+		opacity: 0.1;
+		transform: rotate(-152.487deg);
+		clip-path: ellipse(50% 50% at 50% 50%);
+	}
 
 	&__inner{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		column-gap: 16px;
+
+		height: 830px;
 	}
 
-	// &__content{
-	// 	padding-top: 161px;
-	// }
-
-	&__wrap{
-		margin-bottom: 88px;
+	&__content{
 		position: relative;
+		max-width: 626px;
+		height: 106px;
+
+		align-self: end;
+		margin-bottom: 44px;
 	}
 
 	&__title{
@@ -37,25 +64,212 @@
 		transform: translateY(50%) rotate(-3deg);
 	}
 
+	&__stage{
+		grid-row-start: span 2;
+		position: relative;
+	}
+
+	&__stage-photo{
+		border-radius: 24px;
+		position: absolute;
+	}
+
+	&__stage-photo.item-1{
+		width: 214px;
+		height: 307px;
+		top: 212px;
+		left: 30px;
+
+		&::after{
+			content: '';
+			display: block;
+			background: url('../images/intro-vector-1.svg') center no-repeat;
+			background-size: cover;
+			width: 39px;
+			height: 42px;
+
+			position: absolute;
+			top: calc(100% + 13px);
+			left: 120px;
+			z-index: 1;
+			transform: rotate(6.8deg);
+		}
+	}
+
+	&__stage-photo.item-3{
+		width: 186px;
+		height: 267px;
+		top: 330px;
+		left: 350px;
+
+		&::after{
+			content: '';
+			display: block;
+			background: url('../images/intro-ellipses.svg') no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 49px;
+			height: 42px;
+
+			position: absolute;
+			top: 246px;
+			left: 174px;
+			z-index: 1;
+		}
+	}
+
+	&__stage-cover{
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 40.45%,
+		rgba(0, 0, 0, 0.62) 77.37%, #000 100%);
+
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		border-radius: 24px;
+	}
+
+	&__stage-img{
+		width: 100%;
+		border-radius: 24px;
+	}
+
+	&__wrap{
+		width: 34px;
+		height: 35px;
+		border-radius: 24px;
+
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		z-index: 5;
+	}
+
+	&__icon{
+		width: 100%;
+		height: 100%;
+	}
+
+	&__text-photo{
+		position: absolute;
+		bottom: 16px;
+		left: 20px;
+		max-width: 164px;
+	}
+
+	&__stage-bg{
+		position: absolute;
+	}
+
+	&__stage-bg.item-2{
+		padding: 20px 48px 24px 20px;
+		width: 202px;
+		height: 101px;
+		border-radius: 2px 16px 16px 16px;
+		background-color: rgba(34, 34, 34, 0.50);
+		box-shadow: 1px 2px 8px 0px rgba(34, 34, 34, 0.04),
+		0px 0px 4px 0px rgba(34, 34, 34, 0.08);
+
+		top: 595px;
+		left: 126px;
+
+		& > .intro__wrap{
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+		}
+
+		&::after{
+			content: '';
+			display: block;
+			background: url('../images/intro-vector-2.svg') no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 112px;
+			height: 25px;
+
+			position: absolute;
+			top: 30px;
+			left: calc(100% + 13px);
+			z-index: 1;
+			transform: rotate(-31deg);
+		}
+	}
+
+	&__stage-bg.item-4{
+		width: 208px;
+		height: 86px;
+		border-radius: 16px 16px 16px 2px;
+		background-color: #0D2451;
+		padding: 8px 16px 16px 12px;
+
+		top: 212px;
+		right: 0;
+
+		& > .intro__text-bg{
+			font-family: 'PTRootUI-Regular', sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			color: #E3EEFF;
+		}
+
+		&::after{
+			content: '';
+			display: block;
+			background: url('../images/intro-vector-3.svg') no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 187px;
+			height: 42px;
+
+			position: absolute;
+			top: calc(100% + 87px);
+			left: 0;
+			z-index: 1;
+			transform: rotate(-76deg);
+		}
+	}
+
+	&__label-bg{
+		color: #7A9CDD;
+		font-family: 'PTRootUI-Bold', sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1.4;
+		margin-bottom: 8px;
+	}
+
 	&__card{
 		display: flex;
 		flex-wrap: nowrap;
 		padding: 32px;
+		border-radius: 24px;
 		box-shadow: 0px 0px 12px 6px rgba(39, 94, 199, 0.05);
-
+		max-width: 637px;
+		height: 168px;
+		margin-top: 44px;
+		background-color: $white;
 	}
 
 	&__card-text{
 		font-family: 'PTRootUI-Medium', sans-serif;
 		font-weight: 500;
 		line-height: 1.3;
+		font-size: 20px;
+		color: $black;
 
 		max-width: 400px;
-		margin-right: 24px;
+		margin-right: 38px;
 	}
 
 	&__card-btn{
 		background-color: $blue-main;
 		align-self: center;
+		flex-shrink: 0;
+	}
+
+	&__card-btn:hover{
+		background-color: #0D2451;
 	}
 }
