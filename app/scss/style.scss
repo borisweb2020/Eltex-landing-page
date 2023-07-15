@@ -80,7 +80,7 @@ ul{
 
 	padding: 12px 24px;
 	border-radius: 16px;
-	transition: background-color 0.2s linear;
+	transition: background-color 0.2s linear, border-color 0.2s linear;
 }
 
 .color{
@@ -90,5 +90,6 @@ ul{
 @import 'header.scss';
 @import 'intro.scss';
 @import 'courses.scss';
+@import 'work.scss';
 
 @import 'media.scss';

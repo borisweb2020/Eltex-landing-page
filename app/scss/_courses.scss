@@ -96,7 +96,7 @@
 	}
 
 	&__item:hover{
-		animation: Hover-scale 150ms ease-in;
+		animation: hoverScale 150ms ease-in forwards;
 	}
 
 	&__item-label{
@@ -142,7 +142,7 @@
 	}
 }
 
-@keyframes Hover-scale{
+@keyframes hoverScale{
 	from{
 		transform: scale(1);
 	}
