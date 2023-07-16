@@ -83,7 +83,8 @@
 		&::after{
 			content: '';
 			display: block;
-			background: url('../images/intro-vector-1.svg') center no-repeat;
+			background: url('../images/intro-vector-1.svg') no-repeat;
+			background-position: center;
 			background-size: cover;
 			width: 39px;
 			height: 42px;

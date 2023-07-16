@@ -1,0 +1,208 @@
+@media(max-width: 375.98px){
+	body{
+		font-size: 16px;
+	}
+
+	.container{
+		max-width: none;
+	}
+
+	.header{
+
+		&__nav{
+			height: 72px;
+			padding-left: 20px;
+			padding-right: 20px;
+			border-radius: 0 0 24px 24px;
+		}
+
+		&__logo{
+			margin-right: 55px;
+		}
+
+		&__menu{
+			display: none;
+		}
+
+		&__burger{
+			display: block;
+			width: 24px;
+			height: 24px;
+			margin-left: 24px;
+		}
+
+		&__burger-img{
+			width: 100%;
+		}
+
+		&__burger:focus{
+			outline: none;
+		}
+	}
+
+	.logo{
+		width: 112px;
+		height: 24px;
+	}
+
+	.social{
+		column-gap: 12px;
+
+		&__link.phone{
+			display: inline-block;
+		}
+
+		&__link{
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	.intro{
+		background: none;
+		background-color: $white;
+		box-shadow: 0px 0px 16px 8px rgba(77, 92, 100, 0.10);
+		font-size: 12px;
+		margin-bottom: 0;
+
+		&::after{
+			top: -192px;
+			left: 5.3333%;
+			width: 299px;
+			height: 616px;
+		}
+
+		&__inner{
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(3, 1fr);
+			column-gap: 0;
+		}
+
+		&__content{
+			max-width: 315px;
+			height: 48px;
+		}
+
+		&__title{
+			font-size: 44px;
+		}
+
+		&__label{
+			padding: 2px 16px 4px 16px;
+			font-size: 14px;
+			transform: translateY(100%) rotate(-3deg);
+		}
+
+		&__stage{
+			grid-row-start: auto;
+		}
+
+		&__stage-photo{
+			border-radius: 16px;
+		}
+
+		&__stage-photo.item-1{
+			width: 162px;
+			height: 232px;
+			top: 0;
+			left: 12px;
+
+			&::after{
+				background: url('../images/intro-vector-mobile-1.svg') no-repeat;
+				width: 53px;
+				height: 20px;
+				top: calc(100% - 8px);
+				left: calc(100% + 7px);
+				z-index: 1;
+				transform: rotate(-114deg);
+			}
+		}
+
+		&__stage-photo.item-3{
+			top: 387px;
+			left: 0;
+
+			&::after{
+				background: url('../images/intro-vector-mobile-3.svg') no-repeat;
+				width: 160px;
+				height: 36px;
+
+				position: absolute;
+				top: 211px;
+				left: 154px;
+				z-index: 1;
+				transform: rotate(-76deg);
+			}
+		}
+
+		&__stage-cover{
+			border-radius: 16px;
+		}
+
+		&__stage-img{
+			border-radius: 16px;
+		}
+
+		&__wrap{
+			width: 25px;
+			height: 26px;
+			top: 12px;
+			right: 12px;
+		}
+
+		&__text-photo{
+			bottom: 12px;
+			left: 12px;
+			max-width: 124px;
+		}
+
+		&__stage-bg.item-2{
+			padding: 16px 20px 20px 16px;
+			width: 156px;
+			height: 78px;
+			border-radius: 1px 12px 12px 12px;
+			box-shadow: 0.7px 1.5px 6.2px 0px rgba(34, 34, 34, 0.04),
+											0px 0px 3.1px 0px rgba(34, 34, 34, 0.08);
+			top: 272px;
+			left: 152px;
+
+			& > .intro__wrap{
+				right: 16px;
+			}
+
+			&::after{
+				background: url('../images/intro-vector-mobile-2.svg') no-repeat;
+				width: 77px;
+				height: 17px;
+				top: 58px;
+				left: -100%;
+				transform: rotate(123deg);
+			}
+		}
+
+		&__stage-bg.item-4{
+			top: calc(100% - 86px);
+			right: 0;
+
+			&::after{
+				display: none;
+			}
+		}
+
+		&__card{
+			padding: 32px 20px;
+			max-width: 335px;
+			height: 246px;
+			margin-top: 40px;
+		}
+
+		&__card-text{
+			font-size: 16px;
+
+			max-width: 295px;
+			margin-right: 0;
+		}
+
+
+	}
+}

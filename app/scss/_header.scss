@@ -31,6 +31,14 @@
 		flex-grow: 1;
 	}
 
+	&__menu.menu{
+		padding-right: 16px;
+	}
+
+	&__burger{
+		display: none;
+	}
+
 	// &__social{
 	// 	display: flex;
 	// 	flex-wrap: nowrap;
@@ -64,9 +72,13 @@
 }
 
 .menu{
-	display: flex;
-	flex-wrap: nowrap;
+	display: grid;
+	grid-template-columns: 125px 142px auto;
 	column-gap: 32px;
+
+	&__list:last-child{
+		justify-self: end;
+	}
 
 	&__link{
 		display: inline-block;
@@ -119,6 +131,10 @@
 		display: inline-block;
 		width: 48px;
 		height: 48px;
+	}
+
+	&__link.phone{
+		display: none;
 	}
 
 	&__img{
