@@ -5,6 +5,7 @@
 
 html{
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -91,5 +92,6 @@ ul{
 @import 'intro.scss';
 @import 'courses.scss';
 @import 'work.scss';
+@import 'footer.scss';
 
 @import 'media.scss';

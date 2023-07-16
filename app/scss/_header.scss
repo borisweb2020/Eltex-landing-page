@@ -24,79 +24,104 @@
 	}
 
 	&__logo{
-		display: inline-block;
-		width: 185px;
-		height: 39px;
-
 		margin-right: 80px;
 	}
 
-	&__logo-img{
-		width: 100%;
-	}
-
 	&__menu{
-		display: flex;
-		flex-wrap: nowrap;
-		column-gap: 32px;
-
 		flex-grow: 1;
 	}
 
-	&__menu-link{
+	// &__social{
+	// 	display: flex;
+	// 	flex-wrap: nowrap;
+	// 	column-gap: 16px;
+	// 	align-items: center;
+	// }
+
+	// &__social-phone{
+	// 	color: $blue-main;
+	// }
+
+	// &__social-link{
+	// 	display: inline-block;
+	// 	width: 48px;
+	// 	height: 48px;
+	// }
+
+	// &__social-img{
+	// 	width: 100%;
+	// }
+}
+
+.logo{
+	display: inline-block;
+	width: 185px;
+	height: 39px;
+
+	&__img{
+		width: 100%;
+	}
+}
+
+.menu{
+	display: flex;
+	flex-wrap: nowrap;
+	column-gap: 32px;
+
+	&__link{
 		display: inline-block;
 		position: relative;
 
 		transition: color .2s linear;
 	}
 
-	&__menu-link:hover{
+	&__link:hover{
 		color: $blue-main;
 	}
 
-	&__menu-link::before,
-	&__menu-link::after{
+	&__link::before,
+	&__link::after{
 		display: none;
 		color: $blue-main;
 		position: absolute;
 		z-index: 1;
 	}
 
-	&__menu-link::before{
+	&__link::before{
 		content: "<";
 		top: 0;
 		right: 100%;
 	}
 
-	&__menu-link::after{
+	&__link::after{
 		content: ">";
 		top: 1px;
 		left: 100%;
 	}
 
-	&__menu-link:hover::before,
-	&__menu-link:hover::after{
+	&__link:hover::before,
+	&__link:hover::after{
 		display: inline-block;
 	}
+}
 
-	&__social{
-		display: flex;
-		flex-wrap: nowrap;
-		column-gap: 16px;
-		align-items: center;
-	}
+.social{
+	display: flex;
+	flex-wrap: nowrap;
+	column-gap: 16px;
+	align-items: center;
 
-	&__social-phone{
+	&__phone{
 		color: $blue-main;
 	}
 
-	&__social-link{
+	&__link{
 		display: inline-block;
 		width: 48px;
 		height: 48px;
 	}
 
-	&__social-img{
+	&__img{
 		width: 100%;
 	}
 }
