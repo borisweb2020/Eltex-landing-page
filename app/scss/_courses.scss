@@ -51,6 +51,7 @@
 	&__inner{
 		display: flex;
 		flex-wrap: wrap;
+		overflow: hidden;
 	}
 
 	&__title{
