@@ -51,7 +51,6 @@
 	&__inner{
 		display: flex;
 		flex-wrap: wrap;
-		overflow: hidden;
 	}
 
 	&__title{
@@ -76,11 +75,20 @@
 		align-items: center;
 	}
 
+	&__wrapper{
+		overflow: hidden;
+	}
+
 	&__slider{
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3, min(470px));
+		grid-auto-flow: column;
+		grid-auto-columns: 470px;
 		margin-top: 40px;
 		gap: 16px;
+
+		width: 100%;
+		transition: transform .5s ease-in-out;
 	}
 
 	&__item{
