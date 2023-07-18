@@ -1,2 +1,8 @@
-# test-eltex
-Performing a test task - web page layout, for the position of HTML-coder
+<h3>Eltex</h3>
+<p>Выполнение тестового задания - верстка лэндинга</p>
+<p>
+<strong>Примечание:</strong><br>
+<i>Мобильная версия выполнена только для брейкпойнта 375px</i>
+</p>
+
+
