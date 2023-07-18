@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Boris Web">
+	<meta name="description" content="Some description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-capable" content="yes">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Eltex</title>
+
+    <!-- Отвечает за контент при постинге в соц сетях -->
+    <meta property="og:title" content="Document">
+    <meta property="og:description" content="Some description">
+        <!-- Отвечает за картинку, которая вставляется при постинге в соц сетях -->
+    <meta property="og:image" content="images/preview.jpg">
+
+    <link rel="stylesheet" href="style/style.min.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<nav class="header__nav">
+				<a class="header__logo logo" href="#">
+					<img class="logo__img" src="images/logo-eltex.svg" alt="Logotype">
+				</a>
+				<ul class="header__menu menu">
+					<li class="menu__list">
+						<a class="menu__link" href="#courses">Наши курсы</a>
+					</li>
+					<li class="menu__list">
+						<a class="menu__link" href="#work">Трудоустройство</a>
+					</li>
+					<li class="menu__list">
+						<a class="social__phone" href="tel:+73832744820">+7(383)274-48-20</a>
+					</li>
+				</ul>
+				<div class="mobile">
+					<ul class="mobile__list">
+						<li class="mobile__item">
+							<a class="mobile__item-logo logo" href="#">
+								<img class="logo__img" src="images/logo-eltex.svg" alt="Logotype">
+							</a>
+							<button class="mobile__item-btn" id="btnClose">
+								<img class="logo__img" src="images/icon-close.svg" alt="Close">
+							</button>
+						</li>
+						<li class="mobile__item-link">
+							<a href="#courses">Наши курсы</a>
+						</li>
+						<li class="mobile__item-link">
+							<a href="#work">Трудоустройство</a>
+						</li>
+						<li class="mobile__item-contact">
+							<a href="tel:+73832744820">+7(383)274-48-20</a>
+						</li>
+						<li class="mobile__item-contact">
+							<a href="mailto:job@eltex-co.ru">job@eltex-co.ru</a>
+						</li>
+						<li class="mobile__item-contact">
+							<a href="#">Группа Вконтакте</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__social social">
+					<a class="social__link phone" href="#">
+						<img class="social__img" src="images/icon-phone.svg" alt="Phone icon">
+					</a>
+					<a class="social__link" href="#">
+						<img class="social__img" src="images/icon-mail.svg" alt="Email icon">
+					</a>
+					<a class="social__link" href="#">
+						<img class="social__img" src="images/icon-vk.svg" alt="VK icon">
+					</a>
+				</div>
+				<button class="header__burger" id="btnOpen">
+					<img class="header__burger-img" src="images/icon-burger.svg" alt="Burger icon">
+				</button>
+			</nav>
+		</div>
+	</header>
+
+
+	<!--Intro-->
+	<section class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<div class="intro__content">
+					<h1 class="intro__title">Карьера в Eltex</h1>
+					<div class="intro__label">стань частью нашей команды</div>
+				</div>
+				<div class="intro__stage">
+					<div class="intro__stage-photo item-1">
+						<div class="intro__stage-cover"></div>
+						<img class="intro__stage-img" src="images/intro-photo-1.jpg" alt="Photo">
+						<div class="intro__wrap">
+							<img class="intro__icon" src="images/intro-icon-1.svg" alt="Icon">
+						</div>
+						<p class="intro__text-photo">Осваиваешь учебную программу курса</p>
+					</div>
+					<div class="intro__stage-bg item-2">
+						<div class="intro__wrap">
+							<img class="intro__icon" src="images/intro-icon-2.svg" alt="Icon">
+						</div>
+						<p class="intro__text-bg">Защищаешь Выпускной проект</p>
+					</div>
+					<div class="intro__stage-photo item-3">
+						<div class="intro__stage-cover"></div>
+						<img class="intro__stage-img" src="images/intro-photo-3.jpg" alt="Photo">
+						<div class="intro__wrap">
+							<img class="intro__icon" src="images/intro-icon-3.svg" alt="Icon">
+						</div>
+						<p class="intro__text-photo">Проходишь собеседование</p>
+					</div>
+					<div class="intro__stage-bg item-4">
+						<p class="intro__label-bg">От HR Eltex</p>
+						<div class="intro__wrap">
+							<img class="intro__icon" src="images/intro-icon-4.svg" alt="Icon">
+						</div>
+						<p class="intro__text-bg">Отправляю оффер&#41; <br> Можно выходить на работу</p>
+					</div>
+				</div>
+				<div class="intro__card">
+					<p class="intro__card-text">Бесплатные курсы по сетям	и программированию <span class="color">для студентов</span>. После обучения получи возможность пройти оплачиваемую стажировку в Eltex</p>
+					<button class="button intro__card-btn">Выбрать курс</button>
+				</div>
+			</div> <!--/.intro__inner-->
+		</div> <!--/.container-->
+	</section>
+
+	<!--Courses-->
+	<section class="courses" id="courses">
+		<div class="courses__circle"></div>
+		<div class="container">
+			<div class="courses__inner">
+				<h2 class="courses__title">Наши курсы</h2>
+				<div class="courses__nav">
+					<button class="courses__nav-btn" id="leftButton">
+						<img class="courses__nav-img" src="images/courses-arrow-left.svg" alt="Arrow left">
+					</button>
+					<button class="courses__nav-btn" id="rightButton">
+						<img class="courses__nav-img" src="images/courses-arrow-right.svg" alt="Arrow right">
+					</button>
+				</div>
+				<div class="courses__wrapper">
+					<div class="courses__slider">
+						<div class="courses__item">
+							<div class="courses__item-label">программирование</div>
+							<h4 class="courses__item-title">Системное программирование на Linux (Embedded C)</h4>
+							<div class="courses__item-content">
+								<p class="courses__item-text">
+									<span class="color">Продолжительность:</span> 3,5 месяца
+								</p>
+								<p class="courses__item-text">
+									<span class="color">Формат:</span> Очно на базе НГТУ и Eltex
+								</p>
+							</div>
+							<div class="courses__item-wrap">
+								<img class="courses__item-img" src="images/courses-linux.svg" alt="Linux">
+							</div>
+							<button class="button courses__item-btn">Оставить заявку</button>
+						</div>
+						<div class="courses__item">
+							<div class="courses__item-label">программирование</div>
+							<h4 class="courses__item-title">Системное программирование на Linux (Embedded C)</h4>
+							<div class="courses__item-content">
+								<p class="courses__item-text">
+									<span class="color">Продолжительность:</span> 3,5 месяца
+								</p>
+								<p class="courses__item-text">
+									<span class="color">Формат:</span> Очно на базе НГТУ и Eltex
+								</p>
+							</div>
+							<div class="courses__item-wrap">
+								<img class="courses__item-img" src="images/courses-linux.svg" alt="Linux">
+							</div>
+							<button class="button courses__item-btn">Оставить заявку</button>
+						</div>
+						<div class="courses__item">
+							<div class="courses__item-label">программирование</div>
+							<h4 class="courses__item-title">Системное программирование на Linux (Embedded C)</h4>
+							<div class="courses__item-content">
+								<p class="courses__item-text">
+									<span class="color">Продолжительность:</span> 3,5 месяца
+								</p>
+								<p class="courses__item-text">
+									<span class="color">Формат:</span> Очно на базе НГТУ и Eltex
+								</p>
+							</div>
+							<div class="courses__item-wrap">
+								<img class="courses__item-img" src="images/courses-linux.svg" alt="Linux">
+							</div>
+							<button class="button courses__item-btn">Оставить заявку</button>
+						</div>
+
+						<div class="courses__item">
+							<div class="courses__item-label">тестирование</div>
+							<h4 class="courses__item-title">Системное программирование на Linux (Embedded C)</h4>
+							<div class="courses__item-content">
+								<p class="courses__item-text">
+									<span class="color">Продолжительность:</span> 3,5 месяца
+								</p>
+								<p class="courses__item-text">
+									<span class="color">Формат:</span> Очно на базе НГТУ и Eltex
+								</p>
+							</div>
+							<div class="courses__item-wrap">
+								<img class="courses__item-img" src="images/courses-linux.svg" alt="Linux">
+							</div>
+							<button class="button courses__item-btn">Оставить заявку</button>
+						</div>
+						<div class="courses__item">
+							<div class="courses__item-label">тестирование</div>
+							<h4 class="courses__item-title">Системное программирование на Linux (Embedded C)</h4>
+							<div class="courses__item-content">
+								<p class="courses__item-text">
+									<span class="color">Продолжительность:</span> 3,5 месяца
+								</p>
+								<p class="courses__item-text">
+									<span class="color">Формат:</span> Очно на базе НГТУ и Eltex
+								</p>
+							</div>
+							<div class="courses__item-wrap">
+								<img class="courses__item-img" src="images/courses-linux.svg" alt="Linux">
+							</div>
+							<button class="button courses__item-btn">Оставить заявку</button>
+						</div>
+						<div class="courses__item">
+							<div class="courses__item-label">тестирование</div>
+							<h4 class="courses__item-title">Системное программирование на Linux (Embedded C)</h4>
+							<div class="courses__item-content">
+								<p class="courses__item-text">
+									<span class="color">Продолжительность:</span> 3,5 месяца
+								</p>
+								<p class="courses__item-text">
+									<span class="color">Формат:</span> Очно на базе НГТУ и Eltex
+								</p>
+							</div>
+							<div class="courses__item-wrap">
+								<img class="courses__item-img" src="images/courses-linux.svg" alt="Linux">
+							</div>
+							<button class="button courses__item-btn">Оставить заявку</button>
+						</div>
+					</div> <!--/.courses__slider-->
+				</div> <!--/.courses__wrapper-->
+			</div> <!--/.courses__inner-->
+		</div> <!--/.container-->
+	</section>
+
+	<!--work-->
+	<section class="work" id="work">
+		<div class="container">
+			<div class="work__inner">
+				<div class="work__intro">
+					<div class="work__content">
+						<h2 class="work__content-title">Трудоустройство выпускников в Eltex</h2>
+						<p class="work__content-text">Eltex - ведущий российский разработчик и производитель телекоммуникационного оборудования. За 30 лет наша компания прошла путь от небольшого стартапа из нескольких десятков сотрудников до крупнейшего в отрасли предприятия страны</p>
+						<button class="button work__content-btn">Наши вакансии</button>
+					</div>
+					<div class="work__photo">
+						<div class="work__photo-wrap">
+							<img class="work__photo-img" src="images/work-photo.jpg" alt="Photo">
+						</div>
+					</div>
+				</div>
+				<div class="work__advantages">
+					<div class="work__advantages-item">
+						<h4 class="work__advantages-title">1000+ сотрудников</h4>
+						<p class="work__advantages-text">каждый год штат сотрудников Eltex стабильно растет</p>
+					</div>
+					<div class="work__advantages-item">
+						<h4 class="work__advantages-title">90% выпускников</h4>
+						<p class="work__advantages-text">успешно завершивших наши курсы трудоустраиваются в Eltex</p>
+					</div>
+					<div class="work__advantages-item">
+						<h4 class="work__advantages-title">более 100 проектов</h4>
+						<p class="work__advantages-text">разрабатываются и поддерживаются компанией</p>
+					</div>
+				</div>
+				<div class="work__eltex">
+					<h3 class="work__eltex-title">Почему Eltex?</h3>
+					<div class="work__eltex-images">
+						<div class="work__eltex-wrap wrap-center">
+							<img class="work__eltex-img" src="images/work-carusel-center.jpg" alt="icon">
+						</div>
+						<div class="work__eltex-wrap wrap-1">
+							<img class="work__eltex-img" src="images/work-carusel-1.jpg" alt="icon">
+						</div>
+						<div class="work__eltex-wrap wrap-2">
+							<img class="work__eltex-img" src="images/work-carusel-2.jpg" alt="icon">
+						</div>
+						<div class="work__eltex-wrap wrap-3">
+							<img class="work__eltex-img" src="images/work-carusel-3.jpg" alt="icon">
+						</div>
+						<div class="work__eltex-wrap wrap-4">
+							<img class="work__eltex-img" src="images/work-carusel-4.jpg" alt="icon">
+						</div>
+						<div class="work__eltex-wrap wrap-5">
+							<img class="work__eltex-img" src="images/work-carusel-5.jpg" alt="icon">
+						</div>
+						<div class="work__eltex-wrap wrap-6">
+							<img class="work__eltex-img" src="images/work-carusel-6.jpg" alt="icon">
+						</div>
+						<div class="work__eltex-wrap wrap-7">
+							<img class="work__eltex-img" src="images/work-carusel-7.jpg" alt="icon">
+						</div>
+					</div>
+					<div class="work__eltex-content">
+						<div class="work__eltex-item">
+							<h4 class="work__eltex-subtitle">Интересные задачи</h4>
+							<p class="work__eltex-text">Множество разноплановых проектов не даст соскучиться. Сможешь попробовать свои силы в разных областях</p>
+						</div>
+						<div class="work__eltex-item">
+							<h4 class="work__eltex-subtitle">ДМС</h4>
+							<p class="work__eltex-text">Предоставляем сотрудникам доступ к комплексной программе медицинского страхования, включая стоматологию</p>
+						</div>
+						<div class="work__eltex-item">
+							<h4 class="work__eltex-subtitle">IT отсрочка от призыва</h4>
+							<p class="work__eltex-text">Статус аккредитованной IT-компании дает возможность молодым специалистам отложить службу в армии и сосредоточиться на профессиональном росте</p>
+						</div>
+						<div class="work__eltex-item">
+							<h4 class="work__eltex-subtitle">Льготная IT ипотека</h4>
+							<p class="work__eltex-text">Сотрудникам Eltex доступна программа льготной IT-ипотеки по ставке 5% годовых</p>
+						</div>
+						<div class="work__eltex-item">
+							<h4 class="work__eltex-subtitle">Соблюдение ТК РФ</h4>
+							<p class="work__eltex-text">Никакой оплаты «в конвертах» - официальная заработная плата и трудоустройство с первого дня</p>
+						</div>
+					</div>
+				</div> <!--/.work__eltex-->
+			</div> <!--/.work__inner-->
+		</div> <!--/.container-->
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<nav class="footer__nav">
+					<a class="footer__logo logo" href="#">
+						<img class="logo__img" src="images/logo-eltex.svg" alt="Logotype">
+					</a>
+					<ul class="footer__menu menu">
+						<li class="menu__list">
+							<a class="menu__link" href="#courses">Наши курсы</a>
+						</li>
+						<li class="menu__list">
+							<a class="menu__link" href="#work">Трудоустройство</a>
+						</li>
+					</ul>
+					<a class="social__phone" href="tel:+73832744820">+7(383)274-48-20</a>
+				</nav>
+				<div class="footer__copyright">
+					<p class="footer__copyright-text">Политика конфиденциальности</p>
+					<div class="footer__social social">
+						<a class="social__link" href="#">
+							<img class="social__img" src="images/icon-mail.svg" alt="Email icon">
+						</a>
+						<a class="social__link" href="#">
+							<img class="social__img" src="images/icon-vk.svg" alt="VK icon">
+						</a>
+					</div>
+					<p class="footer__copyright-text">&#169; 2023 ООО «Предприятие «ЭЛТЕКС»</p>
+				</div>
+			</div> <!--/.footer__inner-->
+		</div> <!--/.container-->
+	</footer>
+
+
+
+	<script src="script/main.min.js"></script>
+</body>
+</html>
