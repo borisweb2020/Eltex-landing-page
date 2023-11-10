@@ -1,3 +1,27 @@
+@media(max-width: 1919.98px){
+	.work__inner::after{
+		display: none;
+	}
+
+	.courses::after{
+		display: none;
+	}
+}
+
+// @media(max-width: 1404.98px){
+// 	.intro{
+// 		&__inner{
+// 			grid-template-columns: 100%;
+// 			grid-template-rows: auto 484px auto;
+// 			column-gap: 0;
+// 		}
+
+// 		&__stage{
+// 			grid-row-start: auto;
+// 		}
+// 	}
+// }
+
 @media(max-width: 375.98px){
 	body{
 		font-size: 16px;
@@ -225,10 +249,6 @@
 	.courses{
 		margin-bottom: 60px;
 
-		&::after{
-			display: none;
-		}
-
 		&__circle{
 			display: none;
 		}
@@ -250,7 +270,7 @@
 		&__slider{
 			margin-top: 32px;
 			margin-bottom: 32px;
-			grid-template-columns: repeat(3, min(335px));
+			grid-template-columns: 335px;
 			grid-auto-columns: 335px;
 		}
 
@@ -289,10 +309,6 @@
 
 		&__inner{
 			padding: 60px 20px;
-		}
-
-		&__inner::after{
-			display: none;
 		}
 
 		&__intro{
