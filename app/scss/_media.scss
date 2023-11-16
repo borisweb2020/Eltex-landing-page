@@ -8,21 +8,7 @@
 	}
 }
 
-// @media(max-width: 1404.98px){
-// 	.intro{
-// 		&__inner{
-// 			grid-template-columns: 100%;
-// 			grid-template-rows: auto 484px auto;
-// 			column-gap: 0;
-// 		}
-
-// 		&__stage{
-// 			grid-row-start: auto;
-// 		}
-// 	}
-// }
-
-@media(max-width: 375.98px){
+@media(max-width: 1440.98px){
 	body{
 		font-size: 16px;
 	}
@@ -43,6 +29,8 @@
 			padding-left: 20px;
 			padding-right: 20px;
 			border-radius: 0 0 24px 24px;
+
+			justify-content: space-between;
 		}
 
 		&__logo{
@@ -102,15 +90,16 @@
 
 		&::after{
 			top: -20px;
-			left: 5.3333%;
+			left: 50%;
+			transform: translateX(-50%) rotate(-152.487deg);
 			width: 299px;
 			height: 616px;
 		}
 
 		&__inner{
 			height: 1373px;
-			grid-template-columns: 100%;
-			grid-template-rows: auto 799px auto;
+			grid-template-columns: 50% 50%;
+			grid-template-rows: auto 799px;
 			column-gap: 0;
 		}
 
@@ -121,6 +110,8 @@
 			justify-self: center;
 			margin-bottom: 0;
 			margin-top: 112px;
+
+			grid-column-start: span 2;
 		}
 
 		&__title{
@@ -221,8 +212,8 @@
 		}
 
 		&__stage-bg.item-4{
-			top: calc(100% - 86px);
-			right: 0;
+			top: calc(100% - 102px);
+			right: calc(50% - 104px);
 
 			&::after{
 				display: none;
@@ -270,8 +261,6 @@
 		&__slider{
 			margin-top: 32px;
 			margin-bottom: 32px;
-			grid-template-columns: 335px;
-			grid-auto-columns: 335px;
 		}
 
 		&__item{
@@ -323,6 +312,7 @@
 
 		&__content{
 			padding: 0;
+			text-align: center;
 		}
 
 		&__content-title{
@@ -337,7 +327,7 @@
 		}
 
 		&__content-btn{
-			width: 100%;
+			width: 50%;
 			margin-bottom: 40px;
 		}
 
@@ -346,7 +336,7 @@
 		}
 
 		&__photo-wrap{
-			min-width: 100%;
+			max-width: 100%;
 		}
 
 		&__advantages{
@@ -499,6 +489,59 @@
 		&__social{
 			margin-top: 16px;
 			margin-bottom: 16px;
+		}
+	}
+}
+
+@media(max-width: 999.98px){
+	.courses{
+		&__slider{
+			grid-template-columns: repeat(2, 50%);
+			grid-auto-columns: 50%;
+		}
+	}
+}
+
+@media(max-width: 665.98px){
+	.intro{
+		&::after{
+			top: -20px;
+			left: 5.3333%;
+			width: 299px;
+			height: 616px;
+
+			transform: translateX(0) rotate(-152.487deg);
+		}
+
+		&__inner{
+			grid-template-columns: 100%;
+			grid-template-rows: auto 799px auto;
+		}
+
+		&__content{
+			grid-column-start: auto;
+		}
+
+		&__stage-bg.item-4{
+			top: calc(100% - 86px);
+			right: 0;
+		}
+	}
+
+	.courses{
+		&__slider{
+			grid-template-columns: 100%;
+			grid-auto-columns: 100%;
+		}
+	}
+
+	.work{
+		&__content{
+			padding: 0;
+		}
+
+		&__content-btn{
+			width: 100%;
 		}
 	}
 }
