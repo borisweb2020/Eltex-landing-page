@@ -34,29 +34,44 @@ for (let i = 1; i < targetCount; i++) {
 
 const updatedSlidesArray = $slider.querySelectorAll('.courses__item');
 const updatedSlidesCount = updatedSlidesArray.length; // 75
-console.log(updatedSlidesCount);
-console.dir(updatedSlidesArray);
+
+
 
 // The watcher for an active slide:
 let activeSlideIndex = 0;
 
 // Translation of the slider wrapper:
-const medium = Math.floor(updatedSlidesCount / 2); // 37
-const slideWidth = updatedSlidesArray[0].clientWidth; // 470
-console.log('medium:', medium);
-console.log('width:', slideWidth);
-$slider.style.left = `-${(slideWidth * medium) + (16 * medium)}px`; // -17982px
-console.log('left:', $slider.style.left);
+let currentSlideWidth = slideWidth(updatedSlidesArray);
+translateSlider(currentSlideWidth);
+
+window.addEventListener('resize', () => {
+	$slider.style.transform = 'translateX(0)';
+	currentSlideWidth = slideWidth(updatedSlidesArray);
+	translateSlider(currentSlideWidth);
+});
 
 $leftBtn.addEventListener('click', ()=>{
-	changeSlide('left');
+	changeSlide('left', currentSlideWidth);
 });
 
 $rightBtn.addEventListener('click', ()=>{
-	changeSlide('right');
+	changeSlide('right', currentSlideWidth);
 });
 
-function changeSlide(direction){
+function slideWidth(array){
+	return array[0].clientWidth;
+}
+
+function translateSlider(slideWidth){
+	const medium = Math.floor(updatedSlidesCount / 2); // 37
+	// const slideWidth = updatedSlidesArray[0].clientWidth;
+	console.log('medium:', medium);
+	console.log('width:', slideWidth);
+	$slider.style.left = `-${(slideWidth * medium) + (16 * medium)}px`; // -17982px
+	console.log('left:', $slider.style.left);
+}
+
+function changeSlide(direction, slideWidth){
 	if(direction === 'left'){
 		activeSlideIndex++;
 	} else if(direction === 'right'){
