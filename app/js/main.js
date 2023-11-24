@@ -35,7 +35,6 @@ for (let i = 1; i < targetCount; i++) {
 const updatedSlidesArray = $slider.querySelectorAll('.courses__item');
 const updatedSlidesCount = updatedSlidesArray.length; // 75
 const medium = Math.floor(updatedSlidesCount / 2);
-console.log('medium:', medium);
 
 
 // The watcher for an active slide:
@@ -64,10 +63,7 @@ function slideWidth(array){
 }
 
 function translateSlider(slideWidth){
-
-	console.log('width:', slideWidth);
-	$slider.style.left = `-${(slideWidth * medium) + (16 * medium)}px`; // -17982px
-	console.log('left:', $slider.style.left);
+	$slider.style.left = `-${(slideWidth * medium) + (15 * medium)}px`;
 }
 
 function changeSlide(direction, slideWidth){
