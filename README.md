@@ -4,7 +4,7 @@ Welcome to the School of Programming presentation repository! This project showc
 
 ## Live Demo
 
-Check out the live demo [here](https://eltex.portfolio-boriskharchenko.com).
+Check out the live demo [here](https://land.portfolio-boriskharchenko.com).
 
 ## Features
 
